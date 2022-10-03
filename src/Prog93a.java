@@ -5,13 +5,13 @@ public class Prog93a {
     Scanner input = new Scanner(System.in);
 
     System.out.print("Enter kilowatts used: ");
-    int kw = input.nextDouble();
+    double kw = input.nextDouble();
     double base = kw * 0.0475;
     double surcharge = kw * .10;
     double tax = base * .03;
     double total = base + surcharge + tax;
     double late = (base + surcharge + tax) * 0.04;
-
+    double totalLate = 0;
 
     
     base = Math.round(base * 100.0) / 100;
