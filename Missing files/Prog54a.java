@@ -19,10 +19,3 @@ public class Prog54a {
     }
 }
 
-/*
-        what is the model of the car: Ford Focus
-        How many miles were driven: 256
-        How many gallons were used: 12
-        THe average MPG used by the Ford Focus are 21.333333333333332 m/g
-
-*/

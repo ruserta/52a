@@ -4,8 +4,6 @@ public static void main(String[] args) {
     int b = 1; 
   double c;
 
-  // while (conditional && condition2) are both true...
-  // while (condition1 || condition2) either one are both true
   while (a < b && b <= 15) {
     a += 1;
     if ( a == b) {

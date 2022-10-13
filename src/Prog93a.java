@@ -1,30 +1,39 @@
+
 import java.util.*;
 
 public class Prog93a {
-  public static void main(String[] args){
-    Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
 
-    System.out.print("Enter kilowatts used: ");
-    double kw = input.nextDouble();
-    double base = kw * 0.0475;
-    double surcharge = kw * .10;
-    double tax = base * .03;
-    double total = base + surcharge + tax;
-    double late = (base + surcharge + tax) * 0.04;
-    double totalLate = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number of kilowatt hours used: ");
+        double kWh = input.nextDouble();
+        input.close();
 
-    
-    base = Math.round(base * 100.0) / 100;
-    surcharge = Math.round(surcharge * 100.0)/ 100.0;
-    tax = Math.round(late * 100.0)/ 100.0;
-    late = Math.round(late * 100.0)/100.0;
-    totalLate = Math.ceil(late * 100.0)/100.0;
-    
+     
+        double bill = kWh * 0.0475;
+        double surcharge = bill * 0.1;
+        double tax = bill * 0.03;
+        double late = (bill + surcharge + tax) * 0.04;
+        double total_if_late = bill + surcharge + tax + late;
 
-    System.out.printf("Kilowatts used : %d%n", kw);
-    System.out.println("Base rate : " + base);
-    System.out.println("Surcharge: "+ surcharge);
-    System.out.println("Tax: " + tax);
-    System.out.println("Total: " + total);
-  }
+
+        bill = Math.round(bill * 100.0) / 100.0;
+        surcharge = Math.round(surcharge * 100.0) / 100.0;
+        tax = Math.round(tax * 100.0) / 100.0;
+        late = Math.round(late * 100.0) / 100.0;
+        total_if_late = Math.ceil(total_if_late * 100.0) / 100.0;
+
+
+        System.out.println("Electricity Bill");
+        System.out.println("Kilowatt hours used: " + kWh);
+        System.out.println("Amount billed: $" + bill);
+        System.out.println("Surcharge: $" + surcharge);
+        System.out.println("City utility tax: $" + tax);
+        System.out.println("Total bill: $" + (bill + surcharge + tax));
+        System.out.println();
+        System.out.println("After May 20th pay: $" + total_if_late);
+
+
+
+    }
 }

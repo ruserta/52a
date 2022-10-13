@@ -26,14 +26,5 @@ public class Prog88a {
     System.out.println("Avereage: " + average);
     System.out.println("Distance: " + distance);
 
-    /*
-     * Num1: 4
-     * Num2: 15
-     * Sum: 19
-     * Difference: -11
-     * Product: 60
-     * Avereage: 9.5
-     * Distance: 11
-     */
   }
 }
