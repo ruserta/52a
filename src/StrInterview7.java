@@ -1,4 +1,4 @@
-//done 
+
 import java.util.Scanner;
 
 public class StrInterview7 {
