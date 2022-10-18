@@ -17,10 +17,9 @@ public class Prog58h {
 
       double totalAmount = amSav + interestEarned;
 
-      // interestEarned = Math.round(interestEarned);
       System.out.printf("Interest earned: $%.2f", interestEarned);
       System.out.println();
-      System.out.printf("Total amount earned: $%.2f", totalAmount); // printf("%.2f", variableName)
+      System.out.printf("Total amount earned: $%.2f", totalAmount);
       System.out.println();
     }
   }

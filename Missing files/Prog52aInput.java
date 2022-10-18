@@ -19,13 +19,3 @@ public class Prog52aInput {
     }
 }
 
-/*
-
-Please enter the length: 5
-
-Please enter the width: 10
-
-The area is 50
-The perimeter is 30
-
- */

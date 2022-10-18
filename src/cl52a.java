@@ -1,13 +1,10 @@
 public class cl52a {
-  // private
+
   private int myLen;
   private int myWid;
   private int myArea;
   private int myPerim;
 
-  // constructor
-  
-  
   public cl52a(int l, int w) {
     myLen = l;
     myWid = w;
@@ -19,11 +16,9 @@ public class cl52a {
   public void setStuff() {
     myArea = myWid * myLen;
     myPerim = 2 * myWid + 2 * myLen;
-    // return; // a void method does NOT return anything -- the "empty return" is
-    // implicit
+
   }
 
-  // Accessors: returns private data
   public int getArea() {
     return myArea;
   }
@@ -32,6 +27,15 @@ public class cl52a {
     return myPerim;
   }
 
+  public String toString() {
+    return String.format("Area: %s\nPerimeter: %s", myArea, myPerim);
+
+  }
+
+  public void print() {
+    System.out.println(this.toString());
+
+  }
 }
 /*
  * Class:

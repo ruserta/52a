@@ -1,4 +1,3 @@
-// not done 
 import java.util.Scanner;
 public class StrInterview6 {
   public static void main(String[] args) {
