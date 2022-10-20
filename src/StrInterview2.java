@@ -2,7 +2,7 @@
 //9-twenty something - 2022 
 
 public class StrInterview2 {
-  public static void mian(String[] srgs){
+  public static void main(String[] srgs){
     String word = "Mary" ; 
     String anagram = "Army";
 
